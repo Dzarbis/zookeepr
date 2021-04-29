@@ -20,8 +20,8 @@ function filterByQuery(query, animalsArray) {
             personalityTraitsArray = query.personalityTraits;
         }
         personalityTraitsArray.forEach(trait => {
-            filteredResults = filteredResults.filter(animal =>
-                animal.personalityTraits.indexOf(trait) !== -1
+            filteredResults = filteredResults.filter(
+                animal => animal.personalityTraits.indexOf(trait) !== -1
             );
         });
     }
